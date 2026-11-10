@@ -40,3 +40,5 @@ def budget_status(payment, budget):
         return "Over budget"
 
 print (budget_status(200, 250))
+print (budget_status(250, 250))
+print (budget_status(275, 250))
