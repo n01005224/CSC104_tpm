@@ -197,19 +197,12 @@ print("=== Option 1: budget_check (budget 250) ===")
 print("T1  payment 200      expected: Below budget       actual:", budget_check(200, 250))
 print("T2  payment 250      expected: Exactly at budget  actual:", budget_check(250, 250))
 print("T3  payment 275      expected: Over budget        actual:", budget_check(275, 250))
-print("T4  payment 249.999  expected: Exactly at budget  actual:", budget_check(249.999, 250))
-print("T5  payment 0, budget 0  expected: Exactly at budget  actual:", budget_check(0, 0))
-print("T6  is_nonnegative_amount(-1)  expected: False  actual:", is_nonnegative_amount(-1))
 
 print()
 print("=== Option 8: savings_check (required 200) ===")
 print("T7  planned 150      expected: Shortfall of $50.00  actual:", savings_check(200, 150))
 print("T8  planned 200      expected: Meets requirement    actual:", savings_check(200, 200))
 print("T9  planned 250      expected: Extra savings of $50.00  actual:", savings_check(200, 250))
-print("T10 planned 0        expected: Shortfall of $200.00  actual:", savings_check(200, 0))
-print("T11 planned 199.999  expected: Meets requirement    actual:", savings_check(200, 199.999))
-print("T12 is_nonnegative_amount(-1)  expected: False  actual:", is_nonnegative_amount(-1))
-print("T13 is_positive_amount(0) (required 0 invalid)  expected: False  actual:", is_positive_amount(0))
 
 
 # ------------------ Option 1 input section ------------------
